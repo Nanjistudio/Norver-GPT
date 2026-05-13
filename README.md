@@ -1,95 +1,111 @@
-name: Sync to Hugging Face Hub
-on:
-  push:
-    branches: [main]
-  workflow_dispatch:
+---
+title: NorverGPT
+emoji: 🤖
+colorFrom: blue
+colorTo: gray
+sdk: streamlit
+app_file: app.py
+pinned: false
+---
 
-jobs:
-  sync:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
-      - name: Push to hub
-        env:
-          HF_TOKEN: ${{ secrets.HF_TOKEN }}
-        run: |
-          git push --force https://YOUR_HF_USERNAME:$HF_TOKEN@huggingface.co/spaces/YOUR_HF_USERNAME/YOUR_SPACE_NAME main
+# 🤖 NorverGPT: Next-Generation Multimodal AI Platform
 
-# 🤖 NorverGPT: The Next-Gen Multimodal AI Assistant
-
-![NorverGPT Banner](https://shields.io)
-![Status](https://shields.io)
 ![Platform](https://shields.io)
+![Infrastructure](https://shields.io)
+![Engine](https://shields.io)
+![Search](https://shields.io)
 
-**NorverGPT** is a high-performance, intelligent AI platform that merges visual understanding with real-time global web research. Built for speed, memory retention, and accuracy, NorverGPT is designed to behave like a personal "Reasoning Engine" that can see, hear, and research the world just for you.
-
----
-
-## 🚀 Key Features
-
-### 👁️ Advanced Vision Engine
-Equipped with the **Moondream2** local vision model, NorverGPT can analyze any image uploaded. It doesn't just label objects; it understands context. Ask it to describe a room, explain a complex diagram, or even write code based on a screenshot of a website.
-
-### 🌐 Live Web Intelligence (Tavily Integration)
-Unlike static AI models that are stuck in the past, NorverGPT has "Internet Eyes." Using the **Tavily Search API**, it browses the live web to find current news, prices, and facts, synthesizing them into a single, cohesive paragraph of truth.
-
-### 🧠 Persistent Context Memory
-NorverGPT features a **Gemini-style memory loop**. It remembers past instructions and the context of the conversation. If a secret is shared in the first message, it will remember it later.
-
-### 💻 Developer-Ready (The NGPTS Library)
-NorverGPT isn't just a website; it's a tool for builders. Using the `pip install NGPTS` command, developers can integrate the NorverGPT "Brain" directly into their own Python projects, apps, and robots.
+**NorverGPT** is an advanced AI interface designed to unify visual comprehension, contextual retention, and real-time web research. It operates as a decentralized "Reasoning Engine." NorverGPT provides instant, verified answers by executing structural data aggregation across the clear web.
 
 ---
 
-## 🛠️ Technical Architecture
+## 🚀 Core Pillars of Intelligence
 
-NorverGPT is built using a "Best-of-Breed" stack:
-*   **Frontend:** [Streamlit](https://streamlit.io) for a clean, responsive, and dark-themed UI.
-*   **Model Hosting:** [Hugging Face Spaces](https://huggingface.co) for 24/7 cloud availability.
-*   **Vision Brain:** [Moondream2](https://huggingface.co) (Auto-Regressive Vision-Language Model).
-*   **Search Engine:** [Tavily AI](https://tavily.com) for LLM-optimized web scraping.
-*   **Language:** Python 3.11 with [PyTorch](https://pytorch.org) and [Transformers](https://huggingface.co).
+### 1. 👁️ Adaptive Vision System
+Powered by the `Moondream2` multi-modal architecture, NorverGPT contains structural visual layers. Users can upload images (JPEG, PNG, JPG) to perform complex logic operations:
+*   **Code Generation from Design:** Convert screenshots of web components into Python code.
+*   **Contextual Scene Assessment:** Extract insight, environmental descriptions, and logical conclusions from photographic material.
+*   **Document Analysis:** Parse structure and handwritten data from document scans.
+
+### 2. 🌐 Real-Time Knowledge Aggregation (Tavily Integration)
+NorverGPT eliminates information decay by offloading global lookups to the `Tavily Search API`. When evaluating prompts:
+*   The system executes autonomous parallel search queries optimized for LLM consumption.
+*   It aggregates multi-source web texts, removing noise and irrelevant tracking cookies.
+*   It provides factual data streams, ensuring up-to-the-minute awareness of market statistics, current affairs, and code documentation updates.
+
+### 3. 🧠 Persistent Gemini-Style Memory Retention
+Equipped with a session-state vector simulation layer, NorverGPT features long-form dialog awareness.
+*   **Instruction Following:** The system retains user parameters across the execution timeframe.
+*   **Context Serialization:** Up to 10 historical conversation nodes are dynamically injected back into the cognitive loop, allowing the model to recall names, variables, and specific context metrics.
 
 ---
 
-## 🔧 Installation & Usage
+## 🛠️ Technical Stack Specification
 
-### For Users:
-Access the live version at **[norvergpt.com](https://norvergpt.com)**. No installation is required.
+*   **UI Core Architecture:** Streamlit Engine.
+*   **Base Tensor Framework:** PyTorch.
+*   **Model Pipeline Management:** Hugging Face Hub APIs & Local Cache Transformers.
+*   **Execution Runtime Environment:** Python 3.11 Standard Cloud Instance Cluster.
+*   **Data Broker Layer:** Tavily Live Query Brokerage Client.
 
-### For Developers (Local Run):
-1.  **Clone the Repo:**
+---
+
+## 📦 Automated Deployment Pipeline
+
+NorverGPT is integrated with a continuous delivery pipeline (`CD`). The codebase uses Git workflow automation to connect local development environments with global public endpoints:
+
+```text
+  [ Local Developer Git Commit ]
+                │
+                ▼
+     [ GitHub Master Repo ]
+                │
+                ▼ (GitHub Actions Mirror Workflow)
+    [ Hugging Face Core Hub ]
+                │
+                ▼ (Automated Virtual Asset Compiling)
+      [ Live Cloud Mirror ] ──► [ Custom Mapping: norvergpt.com ]
+```
+
+---
+
+## 🔧 Self-Hosting & Developer Installation
+
+To run an instance of the NorverGPT engine locally:
+
+1.  **Clone the Architecture Repository:**
     ```bash
-    git clone https://github.com
-    cd Norver-GPT
+    git clone github.com
+    cd NorverGPT
     ```
-2.  **Install Dependencies:**
+
+2.  **Initialize Environment Requirements:**
     ```bash
     pip install -r requirements.txt
     ```
-3.  **Launch the AI:**
+
+3.  **Execute the Engine Core:**
     ```bash
     streamlit run app.py
     ```
 
 ---
 
-## 🗺️ Roadmap
--   [x] Multimodal Image Support
--   [x] Live Web Search Integration
--   [x] Conversation History & Memory
--   [ ] Voice Input & Speech Synthesis (Coming Soon)
--   [ ] Mobile App (iOS/Android)
--   [ ] PDF & Document Analysis
+## 🗺️ Engineering Roadmap
+-   [x] Deployment of Multimodal Local Vision Layer
+-   [x] Enterprise API-Driven Live Search Protocol
+-   [x] Linear Dialog Contextual Memory Retention Array
+-   [ ] Implementation of Asynchronous Local Document Indexing (PDF/CSV)
+-   [ ] Edge Audio Transcription Architecture Integration
+-   [ ] Dedicated Native Desktop Application Modules
 
 ---
 
-## 📄 License & Credits
-Developed by **Narjistudio**.
-Special thanks to the Hugging Face community and the Tavily AI team for providing the infrastructure that powers NorverGPT.
+## 📄 License & System Protocols
+Engine developed, structured, and customized under the operations management of **NanjiStudio**.
+
+Custom interfaces, security layers, and deployment pipeline workflows remain open for community-driven contribution.
 
 ---
 
-© 2026 NorverGPT. All Rights Reserved.
+*© 2026 NorverGPT Systems. Engineered for Infinite Potential.*
