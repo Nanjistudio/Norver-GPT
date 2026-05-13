@@ -15,4 +15,4 @@ jobs:
       - name: Push to hub
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
-        run: git push --force https://Narjistudio:$HF_TOKEN@huggingface.co/spaces/Narjistudio/Norver-GPT main
+        run: git push --force https://Nanjistudio:$HF_TOKEN@huggingface.co/spaces/NanjiStudio/Norver-GPT main
