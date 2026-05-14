@@ -4,11 +4,11 @@ emoji: 🤖
 colorFrom: blue
 colorTo: gray
 sdk: streamlit
-python_version: 3.11
+sdk_version: 1.35.0
+python_version: "3.11"
 app_file: app.py
 pinned: false
 ---
-
 
 # 🤖 NorverGPT: Next-Generation Multimodal AI Platform
 
@@ -17,97 +17,109 @@ pinned: false
 ![Engine](https://shields.io)
 ![Search](https://shields.io)
 
-**NorverGPT** is an advanced AI interface designed to unify visual comprehension, contextual retention, and real-time web research. It operates as a decentralized "Reasoning Engine." NorverGPT provides instant, verified answers by executing structural data aggregation across the clear web.
+**NorverGPT** is an elite, high-performance computing interface engineered to unify real-time advanced computer vision, stateful session-state context retention, and automated deep web intelligence lookups. Operating as a decentralized "Reasoning Engine," the platform bridges the gap between deep local model execution and external live-data brokerage services.
 
 ---
 
-## 🚀 Core Pillars of Intelligence
+## 🚀 Core Systems Architecture
 
-### 1. 👁️ Adaptive Vision System
-Powered by the `Moondream2` multi-modal architecture, NorverGPT contains structural visual layers. Users can upload images (JPEG, PNG, JPG) to perform complex logic operations:
-*   **Code Generation from Design:** Convert screenshots of web components into Python code.
-*   **Contextual Scene Assessment:** Extract insight, environmental descriptions, and logical conclusions from photographic material.
-*   **Document Analysis:** Parse structure and handwritten data from document scans.
+### 1. 👁️ Vision Intelligence Core (Multimodal)
 
-### 2. 🌐 Real-Time Knowledge Aggregation (Tavily Integration)
-NorverGPT eliminates information decay by offloading global lookups to the `Tavily Search API`. When evaluating prompts:
-*   The system executes autonomous parallel search queries optimized for LLM consumption.
-*   It aggregates multi-source web texts, removing noise and irrelevant tracking cookies.
-*   It provides factual data streams, ensuring up-to-the-minute awareness of market statistics, current affairs, and code documentation updates.
+Powered by the state-of-the-art `Moondream2` visual-language model pipeline. NorverGPT processes raw multi-format visual arrays (JPEG, PNG, WEBP) to perform contextual computation:
 
-### 3. 🧠 Persistent Gemini-Style Memory Retention
-Equipped with a session-state vector simulation layer, NorverGPT features long-form dialog awareness.
-*   **Instruction Following:** The system retains user parameters across the execution timeframe.
-*   **Context Serialization:** Up to 10 historical conversation nodes are dynamically injected back into the cognitive loop, allowing the model to recall names, variables, and specific context metrics.
+*   **Design-to-Code Transformation:** Reverse-engineer photographic UI designs directly into structured operational script models.
+*   **Contextual Object Breakdown:** Parse layered environments, textual layout fragments, and alphanumeric details embedded inside noisy image data.
+*   **Logical Trend Extraction:** Graph interpretation, technical chart breakdown, and handwritten ledger auditing from standard camera snapshots.
 
----
+### 2. 🌐 Real-Time Knowledge Fabric (Tavily AI Engine)
 
-## 🛠️ Technical Stack Specification
+NorverGPT completely eliminates memory state stagnation by passing prompt operations over to a optimized parallel execution model powered by the `Tavily Search API`:
 
-*   **UI Core Architecture:** Streamlit Engine.
-*   **Base Tensor Framework:** PyTorch.
-*   **Model Pipeline Management:** Hugging Face Hub APIs & Local Cache Transformers.
-*   **Execution Runtime Environment:** Python 3.11 Standard Cloud Instance Cluster.
-*   **Data Broker Layer:** Tavily Live Query Brokerage Client.
+*   **Contextual Parallel Lookups:** Conducts lightning-fast parallel searches explicitly filtered for LLM analytical ingestion.
+*   **Scrape Aggregator Array:** Dynamically cleans query target sites, stripping away script footprints, promotional track elements, and structural noise.
+*   **Instant Truth Delivery:** Instantly synthesizes dynamic global variables, live software tracking docs, current events, and changing financial metrics.
+
+### 3. 🧠 Continuous Session Memory Array (Gemini-Style Context)
+
+Utilizing a highly robust multi-turn context stack managed dynamically through Streamlit's structural session parameters:
+
+*   **Continuous Parameter Awareness:** Explicitly tracks user commands, environmental criteria, and system restrictions throughout active runtimes.
+*   **Serialized Context Loops:** Injects up to 10 sequential prompt-response blocks directly back into the engine's current analytical path. This guarantees the platform natively retains unique user identification elements, structural variable changes, and context conditions.
 
 ---
 
-## 📦 Automated Deployment Pipeline
+## 🛠️ Complete Structural Stack Details
 
-NorverGPT is integrated with a continuous delivery pipeline (`CD`). The codebase uses Git workflow automation to connect local development environments with global public endpoints:
+
+| System Layer   | Component Engine           | Execution Framework               |
+| :------------- | :------------------------- | :-------------------------------- |
+| **User Interface** | Streamlit Architecture     | Custom Dark-Themed Matrix Layout |
+| **Tensor Processor** | PyTorch Core Binaries      | Pure CPU Instance Cluster Optimization |
+| **Cognitive Core** | Hugging Face Transformers Hub | Moondream2 Multi-Modal Target Model |
+| **Research Node** | Tavily Pro API Client      | LLM-Optimized Live Web Scraper Broker |
+| **Runtime Image** | Python Standard Hub Environment | Fixed Micro-Image Version 3.11 |
+
+---
+
+## 📦 System Automated Mirroring Workflow
+
+The system utilizes an advanced GitHub-to-HuggingFace continuous deployment infrastructure pipeline (`CD`) to handle all asset deployments:
 
 ```text
-  [ Local Developer Git Commit ]
-                │
-                ▼
-     [ GitHub Master Repo ]
-                │
-                ▼ (GitHub Actions Mirror Workflow)
-    [ Hugging Face Core Hub ]
-                │
-                ▼ (Automated Virtual Asset Compiling)
-      [ Live Cloud Mirror ] ──► [ Custom Mapping: norvergpt.com ]
+       [ Local Git Push Command ]
+                   │
+                   ▼
+       [ GitHub Master Repository ]
+                   │
+                   ▼ (GitHub Actions Automated Mirror Sync)
+    [ Hugging Face Core Hub Environment ]
+                   │
+                   ▼ (Automated Image Tracking Build)
+       [ Active Global Mirror App ] ──► [ Custom Domain Target: norvergpt.com ]
 ```
 
 ---
 
-## 🔧 Self-Hosting & Developer Installation
+## 🔧 Developer Local Installation Manual
 
-To run an instance of the NorverGPT engine locally:
+To execute an independent deployment of the NorverGPT core architecture locally:
 
-1.  **Clone the Architecture Repository:**
+1.  **Clone the Source Tree Blueprint:**
+
     ```bash
     git clone github.com
-    cd NorverGPT
+    cd Norver-GPT
     ```
+2.  **Initialize Environment Dependencies:**
 
-2.  **Initialize Environment Requirements:**
     ```bash
     pip install -r requirements.txt
     ```
+3.  **Fire Up the Engine Cluster:**
 
-3.  **Execute the Engine Core:**
     ```bash
     streamlit run app.py
     ```
 
 ---
 
-## 🗺️ Engineering Roadmap
--   [x] Deployment of Multimodal Local Vision Layer
--   [x] Enterprise API-Driven Live Search Protocol
--   [x] Linear Dialog Contextual Memory Retention Array
--   [ ] Implementation of Asynchronous Local Document Indexing (PDF/CSV)
--   [ ] Edge Audio Transcription Architecture Integration
--   [ ] Dedicated Native Desktop Application Modules
+## 🗺️ Systems Strategic Engineering Roadmap
+
+*   \[x] Integrate multi-modal local visual parsing nodes.
+*   \[x] Implement high-speed parallel Tavily API research loops.
+*   \[x] Deploy full 10-turn serialized memory tracking arrays.
+*   \[ ] Build multi-threaded document parsing modules (PDF/CSV/XLSX).
+*   \[ ] Incorporate edge audio stream processing architectures.
+*   \[ ] Deploy custom target wrapper frameworks for desktop platforms.
 
 ---
 
-## 📄 License & System Protocols
-Engine developed, structured, and customized under the operations management of **NanjiStudio**.
+## 📄 Protocol Rules & System Licensing
 
-Custom interfaces, security layers, and deployment pipeline workflows remain open for community-driven contribution.
+This platform is engineered, maintained, and operated under the core technology management umbrella of **NanjiStudio**.
+
+All infrastructure files, configuration profiles, execution scripts, and interface mechanics remain entirely open to authorized developer adjustments and open-source contribution patterns.
 
 ---
 
-*© 2026 NorverGPT Systems. Engineered for Infinite Potential.*
+*© 2026 NorverGPT Systems. Built to Break Boundaries.*
